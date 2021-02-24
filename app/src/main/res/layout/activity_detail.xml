@@ -4,22 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailActivity"
-    android:orientation="vertical">
+    android:background="#353535"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
 
     <com.google.android.youtube.player.YouTubePlayerView
         android:id="@+id/player"
         android:layout_width="match_parent"
-        android:layout_height="250dp" />
+        android:layout_height="250dp"
+        android:transitionName="ivPosterTransition" />
 
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#000000"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
         android:text="TextView"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         android:textSize="40sp"
+        android:textStyle="bold"
+        android:transitionName="textViewTransition"
         tools:text="Wonder Woman" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#FFFFFF"
+        android:foregroundTint="#FFFFFF" />
 
     <RatingBar
         android:id="@+id/ratingBar"
@@ -27,30 +43,62 @@
         android:layout_height="wrap_content"
         android:isIndicator="true"
         android:numStars="10"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:progressBackgroundTint="#FFFFFF"
         android:progressTint="#FF9800"
         android:rating="8.5"
         android:secondaryProgressTint="#FF9800" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#FFFFFF"
+        android:foregroundTint="#FFFFFF" />
 
     <TextView
         android:id="@+id/tvOverview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#353535"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="20dp"
+        android:textColor="#FFFFFF"
+        android:transitionName="tvOverviewTransition"
         tools:text="Wonder Woman comes into conflict with the Soviet Union during the Cold War in the 1980s and finds a formidable foe by the name of the Cheetah" />
 
     <TextView
         android:id="@+id/tvReleaseDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#353535"
+        android:paddingTop="10dp"
         android:text="TextView"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         tools:text="2020-12-16" />
 
     <TextView
         android:id="@+id/tvLanguage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#353535"
+        android:paddingBottom="10dp"
         android:text="TextView"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         tools:text="en" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#FFFFFF"
+        android:foregroundTint="#FFFFFF" />
 
 </LinearLayout>
