@@ -23,10 +23,7 @@ Flixter is an app that allows users to browse movies from the [The Movie Databas
 - [ ] Apply data binding for views to help remove boilerplate code. (1 point)
 - [ ] Add a rounded corners for the images using the Glide transformations. (1 point)
 
-### App Walkthough GIF
 
-
-<img src="Walkthrough.gif" width=250><br>
 
 
 ## Open-source libraries used
